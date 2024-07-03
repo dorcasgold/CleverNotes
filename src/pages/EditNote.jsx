@@ -31,6 +31,13 @@ function EditNote({ notes, setNotes }) {
     navigate('/')
   }
 
+  const handleDelete = () => {
+    const newNotes = notes.filter(item => item.id !== id);
+    setNotes(newNotes);
+    //redirect to home page
+    navigate('/')
+  }
+
   return (
     <div className='w-full bg-gray-400 flex justify-center h-auto'>
       <div className='bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark px-4 w-[390px] flex flex-col gap-5 transition-colors duration-300'>
@@ -44,7 +51,7 @@ function EditNote({ notes, setNotes }) {
             <div className="text-3xl bg-teal-700 text-gray-200 p-2 px-2 rounded-lg cursor-pointer hover:bg-teal-600 transition-all" onClick={handleForm}>
               <FaRegSave />
             </div>
-            <div className="text-3xl bg-red-500 text-gray-200 p-2 px-2 rounded-lg cursor-pointer hover:bg-red-800 transition-all">
+            <div className="text-3xl bg-red-500 text-gray-200 p-2 px-2 rounded-lg cursor-pointer hover:bg-red-800 transition-all" onClick={handleDelete}>
               <MdDeleteForever />
             </div>
           </div>
