@@ -3,6 +3,8 @@ import { CiLight } from "react-icons/ci";
 import { FaSearch } from "react-icons/fa";
 import dummynotes from '../dummy_notes'
 import NoteItem from '../components/NoteItem'
+import { MdNoteAdd } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 function Notes() {
   // toggleTheme
@@ -43,6 +45,9 @@ function Notes() {
             ))
           }
         </section>
+        <div className="bg-teal-500 text-white text-2xl w-10 flex justify-center py-2 fixed bottom-3 ml-40  rounded-md">
+          <Link to='/create-note' ><MdNoteAdd /></Link>
+        </div>
       </div>
     </div>
   )
