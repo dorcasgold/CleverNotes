@@ -8,7 +8,7 @@ export default {
     extend: {
       colors: {
         background: {
-          light: '#FFFFFF', // Light mode background
+          light: '#d6d6d6', // Light mode background
           dark: '#0a1330', // Dark mode background
         },
         text: {

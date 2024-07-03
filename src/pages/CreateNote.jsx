@@ -8,12 +8,12 @@ function CreateNote() {
       <div className='bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark px-4 w-[390px] flex flex-col gap-5 transition-colors duration-300'>
         <header className="mx-3 my-4 mt-8">
           <div className="flex justify-between">
-            <div className="text-3xl bg-teal-500 p-2 px-2 rounded-lg cursor-pointer hover:bg-teal-700 transition-all">
+            <div className="text-3xl bg-teal-700 text-gray-200 p-2 px-2 rounded-lg cursor-pointer hover:bg-teal-600 transition-all">
               <Link to='/'>
                 <TiArrowBack />
               </Link>
             </div>
-            <div className="text-3xl bg-teal-500 p-2 px-2 rounded-lg cursor-pointer hover:bg-teal-700 transition-all">
+            <div className="text-3xl bg-teal-700 text-gray-200 p-2 px-2 rounded-lg cursor-pointer hover:bg-teal-600 transition-all">
               <FaRegSave />
             </div>
           </div>
