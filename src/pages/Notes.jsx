@@ -1,12 +1,11 @@
 import { useState, useEffect } from 'react';
 import { CiLight } from "react-icons/ci";
 import { FaSearch } from "react-icons/fa";
-import dummynotes from '../dummy_notes'
 import NoteItem from '../components/NoteItem'
 import { MdNoteAdd } from "react-icons/md";
 import { Link } from "react-router-dom";
 
-function Notes() {
+function Notes({ notes }) {
   // toggleTheme
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
 
@@ -24,7 +23,7 @@ function Notes() {
   };
   // toggleTheme
   return (
-    <div className='w-full bg-gray-400 flex justify-center'>
+    <div className='w-full bg-gray-400 flex justify-center h-screen'>
       <div className='bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark px-4 w-[390px] flex flex-col gap-5 transition-colors duration-300'>
         <header className='flex justify-between items-center text-2xl mt-4'>
           <div>
@@ -40,7 +39,7 @@ function Notes() {
         </section>
         <section className="grid grid-cols-2 gap-2">
           {
-            dummynotes.map(note => (
+            notes.map(note => (
               <NoteItem key={note.id} note={note} />
             ))
           }

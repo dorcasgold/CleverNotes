@@ -5,7 +5,7 @@ import { useState } from "react";
 import { v4 as uuid } from "uuid";
 import useCreateDate from '../components/useCreateDate'
 
-function CreateNote({ SetNotes }) {
+function CreateNote({ setNotes }) {
   const [title, SetTitle] = useState('')
   const [details, SetDetails] = useState('')
   const currentDate = useCreateDate();
@@ -19,10 +19,9 @@ function CreateNote({ SetNotes }) {
 
       const note = { id: uuid(), title, details, currentDate }
       //add this note to the note array
-      SetNotes(prevNotes => [note, ...prevNotes])
+      setNotes(prevNotes => [note, ...prevNotes])
       //redirect to homepage
       navigate('/')
-      console.log(note);
     }
   }
   return (
