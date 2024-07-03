@@ -23,7 +23,7 @@ function Notes() {
   // toggleTheme
   return (
     <div className='w-full bg-gray-400 flex justify-center'>
-      <div className='bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark px-4 w-80 flex flex-col gap-5 transition-colors duration-300'>
+      <div className='bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark px-4 w-[390px] flex flex-col gap-5 transition-colors duration-300'>
         <header className='flex justify-between items-center text-2xl mt-4'>
           <div>
             <p className=" font-semibold">Clever Notes</p>
