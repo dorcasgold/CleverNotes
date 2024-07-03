@@ -32,6 +32,11 @@ function EditNote({ notes, setNotes }) {
   }
 
   const handleDelete = () => {
+    if (window.confirm(`Do yo really want to delete this`)) {
+      const newNotes = notes.filter(item => item.id != id);
+      setNotes(newNotes);
+      navigate('/')
+    }
     const newNotes = notes.filter(item => item.id !== id);
     setNotes(newNotes);
     //redirect to home page
