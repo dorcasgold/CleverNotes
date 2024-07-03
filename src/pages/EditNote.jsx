@@ -44,7 +44,7 @@ function EditNote({ notes, setNotes }) {
   }
 
   return (
-    <div className='w-full bg-gray-400 flex justify-center h-auto'>
+    <div className='w-full note-body bg-gray-400 flex justify-center h-auto'>
       <div className='bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark px-4 w-[390px] flex flex-col gap-5 transition-colors duration-300'>
         <header className="mx-3 my-4 mt-8">
           <div className="flex justify-between">
