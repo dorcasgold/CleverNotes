@@ -1,8 +1,14 @@
-# React + Vite
+### **Clever Notes - Note-Taking App**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Clever Notes is a note-taking application that allows users to create, edit, and delete notes. The app uses Firebase for real-time data synchronization and user authentication.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **User Authentication:** Sign up and log in with Firebase authentication.
+- **Real-Time Sync:** Notes are synchronized across devices.
+- **Simple UI:** Easy management of notes with a user-friendly interface.
+
+## Technologies Used
+
+- **Frontend:** ReactJS, Tailwind CSS
+- **Backend:** Firebase
